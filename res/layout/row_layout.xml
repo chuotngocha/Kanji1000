@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="120sp"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/fourLine"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imageIcon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description 4"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/thirdLine"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_above="@id/fourLine"
+        android:layout_toRightOf="@id/imageIcon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description 3"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_above="@id/thirdLine"
+        android:layout_toRightOf="@id/imageIcon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description 2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_above="@id/secondLine"
+        android:layout_toRightOf="@id/imageIcon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description 1"
+        android:textSize="12sp" />
+
+</RelativeLayout>
