@@ -3,22 +3,12 @@
  */
 package com.learn.kanji.adapter;
 
-/**
- * @author ngocha
- *
- */
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Vector;
-
-import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 
 public class GifDecoder {
-
-	public static List<Bitmap> listCache = new ArrayList<Bitmap>();
 
 	public static final int STATUS_OK = 0;
 	/**
@@ -75,21 +65,17 @@ public class GifDecoder {
 	private boolean readComplete;
 
 	public GifDecoder() {
-
 		readComplete = false;
-
 	}
 
 	private static class GifFrame {
 		public GifFrame(Bitmap im, int del) {
 			image = im;
 			delay = del;
-
 		}
 
 		public Bitmap image;
 		public int delay;
-
 	}
 
 	/**
@@ -142,7 +128,7 @@ public class GifDecoder {
 	 * Creates new frame image from current data (and previous frames as
 	 * specified by their disposition codes).
 	 */
-	protected synchronized void setPixels() {
+	protected void setPixels() {
 		// expose destination image's pixels as int array
 		int[] dest = new int[width * height];
 		// fill in starting image contents based on last image's dispose code
@@ -475,7 +461,7 @@ public class GifDecoder {
 	/**
 	 * Main file parser. Reads GIF content blocks.
 	 */
-	protected synchronized void readContents() {
+	protected void readContents() {
 		// read GIF file content blocks
 		boolean done = false;
 		while (!(done || err())) {
@@ -562,9 +548,7 @@ public class GifDecoder {
 	/**
 	 * Reads next frame image
 	 */
-	@SuppressLint("NewApi")
-	protected synchronized void readBitmap() {
-
+	protected void readBitmap() {
 		ix = readShort(); // (sub)image position & size
 		iy = readShort();
 		iw = readShort();
@@ -602,11 +586,9 @@ public class GifDecoder {
 			return;
 		}
 		frameCount++;
-
+		// create new image to receive frame data
 		image = Bitmap.createBitmap(width, height, Config.ARGB_4444);
-
 		setPixels(); // transfer pixel data to image
-
 		frames.addElement(new GifFrame(image, delay)); // add image to frame
 		// list
 		if (transparency) {

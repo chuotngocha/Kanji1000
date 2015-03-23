@@ -3,15 +3,22 @@
  */
 package com.learn.kanji;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
 
 import com.learn.kanji.adapter.MySimpleArrayAdapter;
-import com.learn.kanji.pojo.TestObject;
+import com.learn.kanji.pojo.KanjiObject;
 
 import android.app.ListActivity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -28,27 +35,70 @@ public class MyListActivity extends ListActivity {
 
 		this.getListView().setBackgroundColor(Color.WHITE);
 
-		List<TestObject> values = new ArrayList<TestObject>();
+		List<KanjiObject> values = new ArrayList<KanjiObject>();
 
-		for (int i = 0; i < 10; i++) {
-			TestObject obj = new TestObject();
-			obj.setFirstLine("first Line" + (i + 1));
-			obj.setSecondLine("secondLine" + (i + 1));
-			obj.setThirdLine("thirdLine" + (i + 1));
-			obj.setFourLine("fourLine" + (i + 1));
+		InputStream is = getResources().openRawResource(R.raw.list_n5);
+		String map = convertStreamToString(is);
+		Scanner scanner = new Scanner(map);
+		KanjiObject obj = null;
+		while (scanner.hasNextLine()) {
+
+			String line = scanner.nextLine();
+
+			// no more lines to read
+			if (line == null) {
+				scanner.close();
+				break;
+			}
+
+			obj = new KanjiObject();
+			String[] columns = line.split("\t");
+
+			obj.setCode(columns[0].toLowerCase(Locale.getDefault()));
+			obj.setOnyomi(columns[2]);
+			obj.setKunyomi(columns[3]);
+			obj.setMeaning(columns[4]);
+
 			values.add(obj);
 		}
 
-		// use your custom layout
-		ArrayAdapter<TestObject> adapter = new MySimpleArrayAdapter(this,
-				values);
-		setListAdapter(adapter);
+		for (KanjiObject kanjiObject : values) {
+			System.out.println(kanjiObject.toString());
+		}
+		System.out.println();
 
+		// use your custom layout
+//		ArrayAdapter<KanjiObject> adapter = new MySimpleArrayAdapter(this,
+//				values);
+//		setListAdapter(adapter);
+
+	}
+
+	private static String convertStreamToString(InputStream is) {
+
+		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+		StringBuilder sb = new StringBuilder();
+
+		String line = null;
+		try {
+			while ((line = reader.readLine()) != null) {
+				sb.append((line + "\n"));
+			}
+		} catch (IOException e) {
+			Log.w("LOG", e.getMessage());
+		} finally {
+			try {
+				is.close();
+			} catch (IOException e) {
+				Log.w("LOG", e.getMessage());
+			}
+		}
+		return sb.toString();
 	}
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
-		TestObject item = (TestObject) getListAdapter().getItem(position);
+		KanjiObject item = (KanjiObject) getListAdapter().getItem(position);
 		Toast.makeText(this, item.toString() + " selected", Toast.LENGTH_LONG)
 				.show();
 	}
