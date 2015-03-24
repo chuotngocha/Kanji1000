@@ -22,13 +22,13 @@ import android.widget.TextView;
  * @author ngocha
  *
  */
-public class MySimpleArrayAdapter extends ArrayAdapter<KanjiObject> {
+public class MySimpleDetailAdapter extends ArrayAdapter<KanjiObject> {
 
 	private final Context context;
 	private final List<KanjiObject> values;
 	private GifAnimationDrawable gif = null;
 
-	public MySimpleArrayAdapter(Context context, List<KanjiObject> values) {
+	public MySimpleDetailAdapter(Context context, List<KanjiObject> values) {
 		super(context, R.layout.row_layout, values);
 		this.context = context;
 		this.values = values;
@@ -41,7 +41,6 @@ public class MySimpleArrayAdapter extends ArrayAdapter<KanjiObject> {
 
 		ViewHolderItem viewHolder;
 
-		// View rowView = inflater.inflate(R.layout.row_layout, parent, false);
 		if (convertView == null) {
 
 			LayoutInflater inflater = (LayoutInflater) context
@@ -54,17 +53,17 @@ public class MySimpleArrayAdapter extends ArrayAdapter<KanjiObject> {
 			viewHolder.code = (ImageView) convertView
 					.findViewById(R.id.imageIcon);
 
-			viewHolder.onyomi = (TextView) convertView
-					.findViewById(R.id.firstLine);
+			viewHolder.book_mark_ic = (ImageView) convertView
+					.findViewById(R.id.book_mark_ic);
 
 			viewHolder.onyomi = (TextView) convertView
-					.findViewById(R.id.secondLine);
+					.findViewById(R.id.onyomi);
 
-			viewHolder.onyomi = (TextView) convertView
-					.findViewById(R.id.thirdLine);
+			viewHolder.kunyomi = (TextView) convertView
+					.findViewById(R.id.kunyomi);
 
-			viewHolder.onyomi = (TextView) convertView
-					.findViewById(R.id.fourLine);
+			viewHolder.meaning = (TextView) convertView
+					.findViewById(R.id.meaning);
 
 			convertView.setTag(viewHolder);
 
@@ -72,32 +71,36 @@ public class MySimpleArrayAdapter extends ArrayAdapter<KanjiObject> {
 			viewHolder = (ViewHolderItem) convertView.getTag();
 		}
 
-		try {
-			gif = new GifAnimationDrawable(context.getResources()
-					.openRawResource(R.drawable.ashi), context.getResources());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
 		KanjiObject objectItem = values.get(position);
 
 		if (objectItem != null) {
+
+			try {
+				gif = new GifAnimationDrawable(context.getResources()
+						.openRawResource(
+								R.drawable.class.getDeclaredField(
+										objectItem.getCode()).getInt(
+										Integer.valueOf(0))),
+						context.getResources());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 
 			gif.setOneShot(false);
 			viewHolder.code.setImageDrawable(gif);
 			gif.setVisible(true, true);
 
-			viewHolder.onyomi.setText(objectItem.getCode());
+			viewHolder.onyomi.setText("Onyomi: " + objectItem.getOnyomi());
 			viewHolder.onyomi.setTextColor(Color.BLACK);
 
-			viewHolder.onyomi.setText(objectItem.getCode());
-			viewHolder.onyomi.setTextColor(Color.BLACK);
+			viewHolder.kunyomi.setText("Kunyomi: " + objectItem.getKunyomi());
+			viewHolder.kunyomi.setTextColor(Color.BLACK);
 
-			viewHolder.onyomi.setText(objectItem.getCode());
-			viewHolder.onyomi.setTextColor(Color.BLACK);
+			viewHolder.meaning.setText(objectItem.getMeaning());
+			viewHolder.meaning.setTextColor(Color.BLACK);
 
-			viewHolder.onyomi.setText(objectItem.getCode());
-			viewHolder.onyomi.setTextColor(Color.BLACK);
+			viewHolder.book_mark_ic.setImageResource(R.drawable.book_mark_test);
+
 		}
 
 		return convertView;
@@ -111,6 +114,7 @@ public class MySimpleArrayAdapter extends ArrayAdapter<KanjiObject> {
 		TextView onyomi;
 		TextView kunyomi;
 		TextView meaning;
+		ImageView book_mark_ic;
 	}
 
 }

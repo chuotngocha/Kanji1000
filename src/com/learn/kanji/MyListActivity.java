@@ -7,22 +7,24 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import com.learn.kanji.adapter.MySimpleArrayAdapter;
+import com.learn.kanji.adapter.SimpleListImageAdapter;
+import com.learn.kanji.helper.DBHelper;
 import com.learn.kanji.pojo.KanjiObject;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 /**
  * @author ngocha
@@ -30,12 +32,56 @@ import android.widget.Toast;
  */
 public class MyListActivity extends ListActivity {
 
+	private List<KanjiObject> results = new ArrayList<KanjiObject>();
+	DBHelper dbHelper;
+
 	public void onCreate(Bundle icicle) {
+
 		super.onCreate(icicle);
 
 		this.getListView().setBackgroundColor(Color.WHITE);
 
-		List<KanjiObject> values = new ArrayList<KanjiObject>();
+		dbHelper = new DBHelper(this);
+
+		if (dbHelper.numberOfRows() == 0) {
+
+			loadFromFile();
+		}
+
+		results = dbHelper.getAllKanjis();
+		List<String> codeImages = new ArrayList<String>();
+		List<String> meanings = new ArrayList<String>();
+
+		KanjiObject obj = new KanjiObject();
+
+		obj.setCode("ani_4949");
+		obj.setOnyomi("onyomi");
+		obj.setKunyomi("setKunyomi");
+		obj.setMeaning("meaning");
+		results.add(obj);
+
+		for (KanjiObject kanjiObject : results) {
+			codeImages.add(kanjiObject.getCode());
+			meanings.add(kanjiObject.getMeaning());
+		}
+
+		ArrayAdapter<String> adapter = new SimpleListImageAdapter(this,
+				codeImages, meanings);
+		setListAdapter(adapter);
+
+	}
+
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+
+		Intent intent = new Intent(MyListActivity.this,
+				ListDetailActivity.class);
+		intent.putExtra("itemClicked", (Serializable) results.get(position));
+		startActivity(intent);
+
+	}
+
+	private void loadFromFile() {
 
 		InputStream is = getResources().openRawResource(R.raw.list_n5);
 		String map = convertStreamToString(is);
@@ -54,27 +100,21 @@ public class MyListActivity extends ListActivity {
 			obj = new KanjiObject();
 			String[] columns = line.split("\t");
 
-			obj.setCode(columns[0].toLowerCase(Locale.getDefault()));
+			obj.setCode(new StringBuilder("n5_").append(
+					columns[0].toLowerCase(Locale.getDefault())).toString());
 			obj.setOnyomi(columns[2]);
 			obj.setKunyomi(columns[3]);
 			obj.setMeaning(columns[4]);
 
-			values.add(obj);
+			results.add(obj);
 		}
 
-		for (KanjiObject kanjiObject : values) {
-			System.out.println(kanjiObject.toString());
+		for (KanjiObject kanjiObject : results) {
+			dbHelper.insertKanji(kanjiObject);
 		}
-		System.out.println();
-
-		// use your custom layout
-//		ArrayAdapter<KanjiObject> adapter = new MySimpleArrayAdapter(this,
-//				values);
-//		setListAdapter(adapter);
-
 	}
 
-	private static String convertStreamToString(InputStream is) {
+	private String convertStreamToString(InputStream is) {
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 		StringBuilder sb = new StringBuilder();
@@ -94,13 +134,6 @@ public class MyListActivity extends ListActivity {
 			}
 		}
 		return sb.toString();
-	}
-
-	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-		KanjiObject item = (KanjiObject) getListAdapter().getItem(position);
-		Toast.makeText(this, item.toString() + " selected", Toast.LENGTH_LONG)
-				.show();
 	}
 
 }

@@ -3,13 +3,20 @@
  */
 package com.learn.kanji.pojo;
 
+import java.io.Serializable;
+
 /**
  * Object Kanji.
  * 
  * @author ngocha.
  *
  */
-public class KanjiObject {
+public class KanjiObject implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5454119003874510095L;
 
 	// kanji's id.
 	private int id;

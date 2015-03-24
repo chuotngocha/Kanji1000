@@ -36,7 +36,7 @@ public class DBHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 
-		db.execSQL("create table if not exists kanjis"
+		db.execSQL("CREATE TABLE IF NOT EXISTS kanjis"
 				+ "(id integer primary key autoincrement, code text, onyomi text, kunyomi text, meaning text, type integer);");
 	}
 

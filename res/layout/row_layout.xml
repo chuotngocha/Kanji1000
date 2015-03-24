@@ -1,60 +1,65 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="120sp"
-    android:padding="6dip" >
+    android:padding="6dip"
+    tools:context=".ListDetailActivity" >
 
     <ImageView
         android:id="@+id/imageIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_width="140sp"
+        android:layout_height="140sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="6dip"
-        android:contentDescription="TODO" />
+        android:layout_marginRight="2dip"
+        android:contentDescription="@string/image_description" />
+
+    <!-- Kanji meaning -->
 
     <TextView
-        android:id="@+id/fourLine"
+        android:id="@+id/meaning_detail"
         android:layout_width="fill_parent"
-        android:layout_height="26dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageIcon"
+        android:layout_toRightOf="@+id/imageIcon"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Kanji onyomi -->
+
+    <TextView
+        android:id="@+id/onyomi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/meaning_detail"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/imageIcon"
+        android:gravity="center_vertical"
+        android:textSize="14sp" />
+
+    <!-- Kanji kunyomi -->
+
+    <TextView
+        android:id="@+id/kunyomi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/onyomi"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageIcon"
+        android:gravity="center_vertical"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/book_mark_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/imageIcon"
-        android:ellipsize="marquee"
-        android:singleLine="true"
-        android:text="Description 4"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/thirdLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_above="@id/fourLine"
-        android:layout_toRightOf="@id/imageIcon"
-        android:ellipsize="marquee"
-        android:singleLine="true"
-        android:text="Description 3"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/secondLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_above="@id/thirdLine"
-        android:layout_toRightOf="@id/imageIcon"
-        android:ellipsize="marquee"
-        android:singleLine="true"
-        android:text="Description 2"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/firstLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_above="@id/secondLine"
-        android:layout_toRightOf="@id/imageIcon"
-        android:ellipsize="marquee"
-        android:singleLine="true"
-        android:text="Description 1"
-        android:textSize="12sp" />
+        android:layout_marginRight="2dip"
+        android:contentDescription="@string/image_description" />
 
 </RelativeLayout>
