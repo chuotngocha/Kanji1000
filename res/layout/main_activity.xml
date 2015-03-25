@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Button
+        android:id="@+id/kanji_n5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/kanji_n5" />
+
+    <Button
+        android:id="@+id/kanji_n4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kanji_n5"
+        android:layout_centerInParent="true"
+        android:text="@string/kanji_n4" />
+
+    <Button
+        android:id="@+id/kanji_n3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kanji_n4"
+        android:layout_centerInParent="true"
+        android:text="@string/kanji_n3" />
+
+    <Button
+        android:id="@+id/kanji_n2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kanji_n3"
+        android:layout_centerInParent="true"
+        android:text="@string/kanji_n2" />
+
+    <Button
+        android:id="@+id/kanji_n1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kanji_n2"
+        android:layout_centerInParent="true"
+        android:text="@string/kanji_n1" />
+
+    <Button
+        android:id="@+id/kanji_bookmark"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kanji_n1"
+        android:layout_centerInParent="true"
+        android:text="@string/kanji_bookmark" />
+
+</RelativeLayout>
