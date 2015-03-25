@@ -5,5 +5,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="meaning">meaning</string>
     <string name="image_description">image description</string>
+    <string name="kanji_n5">Kanji N5</string>
+    <string name="kanji_n4">Kanji N4</string>
+    <string name="kanji_n3">Kanji N3</string>
+    <string name="kanji_n2">Kanji N2</string>
+    <string name="kanji_n1">Kanji N1</string>
+    <string name="kanji_bookmark">Bookmark list</string>
 
 </resources>

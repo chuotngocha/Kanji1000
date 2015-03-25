@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="120sp"
     android:padding="6dip"
-    tools:context=".MyListActivity" >
+    tools:context=".ListKanjiActivity" >
 
     <ImageView
         android:id="@+id/icon"

@@ -1,48 +1,46 @@
-package com.learn.kanji;
+package com.learn.kanji.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.learn.kanji.R;
 import com.learn.kanji.adapter.GifAnimationDrawable;
-import com.learn.kanji.adapter.MySimpleDetailAdapter;
+import com.learn.kanji.helper.DBHelper;
 import com.learn.kanji.pojo.KanjiObject;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.PaintDrawable;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ListDetailActivity extends Activity {
+public class KanjiDetailActivity extends Activity implements OnClickListener {
 
-	ImageView code = null;
-	ImageView book_mark_ic = null;
-	TextView onyomi = null;
-	TextView kunyomi = null;
-	TextView meaning = null;
+	private ImageView code = null;
+	private ImageView book_mark_ic = null;
+	private TextView onyomi = null;
+	private TextView kunyomi = null;
+	private TextView meaning = null;
 	private GifAnimationDrawable gif = null;
+	private int id;
+	private DBHelper dbHelper;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// this.getListView().setBackgroundColor(Color.WHITE);
+
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		setContentView(R.layout.row_layout);
+
+		dbHelper = new DBHelper(this);
 
 		getWindow().getDecorView().setBackgroundColor(Color.WHITE);
 
 		KanjiObject itemClicked = (KanjiObject) getIntent()
 				.getSerializableExtra("itemClicked");
-
-		// List<KanjiObject> itemsClicked = new ArrayList<KanjiObject>();
-		// itemsClicked.add(itemClicked);
 
 		if (code == null) {
 
@@ -50,23 +48,7 @@ public class ListDetailActivity extends Activity {
 
 			book_mark_ic = (ImageView) findViewById(R.id.book_mark_ic);
 			book_mark_ic.setBackgroundColor(Color.WHITE);
-
-			OnClickListener btnBook_mark_ic = new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					ColorDrawable buttonColor = (ColorDrawable) book_mark_ic
-							.getBackground();
-					int colorId = buttonColor.getColor();
-					if (colorId == Color.WHITE) {
-						book_mark_ic.setBackgroundColor(Color.YELLOW);
-					} else {
-						book_mark_ic.setBackgroundColor(Color.WHITE);
-					}
-				}
-			};
-
-			book_mark_ic.setOnClickListener(btnBook_mark_ic);
+			book_mark_ic.setOnClickListener(this);
 
 			onyomi = (TextView) findViewById(R.id.onyomi);
 
@@ -99,10 +81,54 @@ public class ListDetailActivity extends Activity {
 			meaning.setTextColor(Color.BLACK);
 
 			book_mark_ic.setImageResource(R.drawable.book_mark_test);
+			this.id = itemClicked.getId();
+			if (itemClicked.getIsbookmark() == 1) {
+				book_mark_ic.setBackgroundColor(Color.YELLOW);
+			}
+
 		}
 
-		// ArrayAdapter<KanjiObject> adapter = new MySimpleDetailAdapter(this,
-		// itemsClicked);
-		// setListAdapter(adapter);
+	}
+
+	@Override
+	public void onClick(View v) {
+
+		ColorDrawable buttonColor = (ColorDrawable) book_mark_ic
+				.getBackground();
+		int colorId = buttonColor.getColor();
+		if (colorId == Color.WHITE) {
+			book_mark_ic.setBackgroundColor(Color.YELLOW);
+			dbHelper.bookMark(this.id, 1);
+		} else {
+			book_mark_ic.setBackgroundColor(Color.WHITE);
+			dbHelper.bookMark(this.id, 0);
+		}
+	}
+
+	@Override
+	public void onBackPressed() {
+		this.finish();
+	}
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			this.finish();
+			return true;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+
+		switch (item.getItemId()) {
+
+		case android.R.id.home:
+			this.finish();
+			return true;
+		}
+
+		return super.onOptionsItemSelected(item);
 	}
 }

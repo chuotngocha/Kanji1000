@@ -28,6 +28,7 @@ public class DBHelper extends SQLiteOpenHelper {
 	public static final String KANJI_COLUMN_KUNYOMI = "kunyomi";
 	public static final String KANJI_COLUMN_MEANING = "meaning";
 	public static final String KANJI_COLUMN_TYPE = "type";
+	public static final String KANJI_COLUMN_BOOKMARK = "isbookmark";
 
 	public DBHelper(Context context) {
 		super(context, DATABASE_NAME, null, 1);
@@ -37,7 +38,7 @@ public class DBHelper extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 
 		db.execSQL("CREATE TABLE IF NOT EXISTS kanjis"
-				+ "(id integer primary key autoincrement, code text, onyomi text, kunyomi text, meaning text, type integer);");
+				+ "(id integer primary key autoincrement, code text, onyomi text, kunyomi text, meaning text, type integer, isbookmark integer);");
 	}
 
 	@Override
@@ -51,9 +52,15 @@ public class DBHelper extends SQLiteOpenHelper {
 	 * 
 	 * @return numberOfRows.
 	 */
-	public int numberOfRows() {
+	public int numberOfRows(int type) {
 		SQLiteDatabase db = this.getReadableDatabase();
-		int numRows = (int) DatabaseUtils.queryNumEntries(db, KANJI_TABLE_NAME);
+		int numRows;
+		try {
+			numRows = (int) DatabaseUtils.queryNumEntries(db, KANJI_TABLE_NAME,
+					"type=?", new String[] { Integer.toString(type) });
+		} finally {
+			db.close();
+		}
 		return numRows;
 	}
 
@@ -66,41 +73,104 @@ public class DBHelper extends SQLiteOpenHelper {
 	 */
 	public boolean insertKanji(KanjiObject object) {
 		SQLiteDatabase db = this.getWritableDatabase();
-		ContentValues contentValues = new ContentValues();
-		contentValues.put(KANJI_COLUMN_CODE, object.getCode());
-		contentValues.put(KANJI_COLUMN_ONYOMI, object.getOnyomi());
-		contentValues.put(KANJI_COLUMN_KUNYOMI, object.getKunyomi());
-		contentValues.put(KANJI_COLUMN_MEANING, object.getMeaning());
-		contentValues.put(KANJI_COLUMN_TYPE, object.getType());
-		db.insert(KANJI_TABLE_NAME, null, contentValues);
-
+		try {
+			ContentValues contentValues = new ContentValues();
+			contentValues.put(KANJI_COLUMN_CODE, object.getCode());
+			contentValues.put(KANJI_COLUMN_ONYOMI, object.getOnyomi());
+			contentValues.put(KANJI_COLUMN_KUNYOMI, object.getKunyomi());
+			contentValues.put(KANJI_COLUMN_MEANING, object.getMeaning());
+			contentValues.put(KANJI_COLUMN_TYPE, object.getType());
+			contentValues.put(KANJI_COLUMN_BOOKMARK, Integer.valueOf(0));
+			db.insert(KANJI_TABLE_NAME, null, contentValues);
+		} finally {
+			db.close();
+		}
 		return Boolean.TRUE;
 	}
 
-	public ArrayList<KanjiObject> getAllKanjis() {
+	public ArrayList<KanjiObject> getAllKanjis(int type) {
 		ArrayList<KanjiObject> array_list_data = new ArrayList<KanjiObject>();
 
 		SQLiteDatabase db = this.getReadableDatabase();
 
-		Cursor res = db.rawQuery("select * from kanjis;", null);
-		res.moveToFirst();
-		KanjiObject obj = null;
-		while (res.isAfterLast() == false) {
-			obj = new KanjiObject();
-			obj.setCode(res.getString(res.getColumnIndex(KANJI_COLUMN_CODE)));
-			obj.setId(res.getInt(res.getColumnIndex(KANJI_COLUMN_ID)));
-			obj.setKunyomi(res.getString(res
-					.getColumnIndex(KANJI_COLUMN_KUNYOMI)));
-			obj.setMeaning(res.getString(res
-					.getColumnIndex(KANJI_COLUMN_MEANING)));
-			obj.setOnyomi(res.getString(res.getColumnIndex(KANJI_COLUMN_ONYOMI)));
-			obj.setType(res.getInt(res.getColumnIndex(KANJI_COLUMN_TYPE)));
+		Cursor res = db.rawQuery("select * from kanjis where type=?;",
+				new String[] { Integer.toString(type) });
+		try {
+			res.moveToFirst();
+			KanjiObject obj = null;
+			while (res.isAfterLast() == false) {
+				obj = new KanjiObject();
+				obj.setCode(res.getString(res.getColumnIndex(KANJI_COLUMN_CODE)));
+				obj.setId(res.getInt(res.getColumnIndex(KANJI_COLUMN_ID)));
+				obj.setKunyomi(res.getString(res
+						.getColumnIndex(KANJI_COLUMN_KUNYOMI)));
+				obj.setMeaning(res.getString(res
+						.getColumnIndex(KANJI_COLUMN_MEANING)));
+				obj.setOnyomi(res.getString(res
+						.getColumnIndex(KANJI_COLUMN_ONYOMI)));
+				obj.setType(res.getInt(res.getColumnIndex(KANJI_COLUMN_TYPE)));
+				obj.setIsbookmark(res.getInt(res
+						.getColumnIndex(KANJI_COLUMN_BOOKMARK)));
 
-			array_list_data.add(obj);
+				array_list_data.add(obj);
 
-			res.moveToNext();
+				res.moveToNext();
+			}
+		} finally {
+			res.close();
+			db.close();
 		}
-		return array_list_data;
 
+		return array_list_data;
+	}
+
+	public boolean bookMark(int id, int value) {
+
+		SQLiteDatabase db = this.getWritableDatabase();
+		try {
+			ContentValues contentValues = new ContentValues();
+			contentValues.put(KANJI_COLUMN_BOOKMARK, Integer.valueOf(value));
+			db.update(KANJI_TABLE_NAME, contentValues, "id = ? ",
+					new String[] { Integer.toString(id) });
+		} finally {
+			db.close();
+		}
+		return true;
+	}
+
+	public ArrayList<KanjiObject> getKanjisBookmarkOnly() {
+		ArrayList<KanjiObject> array_list_data = new ArrayList<KanjiObject>();
+
+		SQLiteDatabase db = this.getReadableDatabase();
+
+		Cursor res = db.rawQuery("select * from kanjis where isbookmark=1;",
+				null);
+		try {
+			res.moveToFirst();
+			KanjiObject obj = null;
+			while (res.isAfterLast() == false) {
+				obj = new KanjiObject();
+				obj.setCode(res.getString(res.getColumnIndex(KANJI_COLUMN_CODE)));
+				obj.setId(res.getInt(res.getColumnIndex(KANJI_COLUMN_ID)));
+				obj.setKunyomi(res.getString(res
+						.getColumnIndex(KANJI_COLUMN_KUNYOMI)));
+				obj.setMeaning(res.getString(res
+						.getColumnIndex(KANJI_COLUMN_MEANING)));
+				obj.setOnyomi(res.getString(res
+						.getColumnIndex(KANJI_COLUMN_ONYOMI)));
+				obj.setType(res.getInt(res.getColumnIndex(KANJI_COLUMN_TYPE)));
+				obj.setIsbookmark(res.getInt(res
+						.getColumnIndex(KANJI_COLUMN_BOOKMARK)));
+
+				array_list_data.add(obj);
+
+				res.moveToNext();
+			}
+		} finally {
+			res.close();
+			db.close();
+		}
+
+		return array_list_data;
 	}
 }

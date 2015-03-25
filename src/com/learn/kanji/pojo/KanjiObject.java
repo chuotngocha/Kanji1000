@@ -36,6 +36,8 @@ public class KanjiObject implements Serializable {
 	// kanji's type (N1, N2, N3, N4, N5).
 	private int type;
 
+	private int isbookmark;
+
 	/**
 	 * @return the id
 	 */
@@ -126,6 +128,21 @@ public class KanjiObject implements Serializable {
 		this.type = type;
 	}
 
+	/**
+	 * @return the isbookmark
+	 */
+	public int getIsbookmark() {
+		return isbookmark;
+	}
+
+	/**
+	 * @param isbookmark
+	 *            the isbookmark to set
+	 */
+	public void setIsbookmark(int isbookmark) {
+		this.isbookmark = isbookmark;
+	}
+
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -137,6 +154,7 @@ public class KanjiObject implements Serializable {
 		int result = 1;
 		result = prime * result + ((code == null) ? 0 : code.hashCode());
 		result = prime * result + id;
+		result = prime * result + isbookmark;
 		result = prime * result + ((kunyomi == null) ? 0 : kunyomi.hashCode());
 		result = prime * result + ((meaning == null) ? 0 : meaning.hashCode());
 		result = prime * result + ((onyomi == null) ? 0 : onyomi.hashCode());
@@ -164,6 +182,8 @@ public class KanjiObject implements Serializable {
 		} else if (!code.equals(other.code))
 			return false;
 		if (id != other.id)
+			return false;
+		if (isbookmark != other.isbookmark)
 			return false;
 		if (kunyomi == null) {
 			if (other.kunyomi != null)
@@ -194,7 +214,7 @@ public class KanjiObject implements Serializable {
 	public String toString() {
 		return "KanjiObject [id=" + id + ", code=" + code + ", onyomi="
 				+ onyomi + ", kunyomi=" + kunyomi + ", meaning=" + meaning
-				+ ", type=" + type + "]";
+				+ ", type=" + type + ", isbookmark=" + isbookmark + "]";
 	}
 
 }

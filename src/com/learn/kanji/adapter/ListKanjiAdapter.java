@@ -20,15 +20,15 @@ import android.widget.TextView;
  * @author ngocha
  *
  */
-public class SimpleListImageAdapter extends ArrayAdapter<String> {
+public class ListKanjiAdapter extends ArrayAdapter<String> {
 
 	private final Context context;
 	private final List<String> codeImages;
 	private final List<String> meanings;
 
-	public SimpleListImageAdapter(Context context, List<String> codeImages,
+	public ListKanjiAdapter(Context context, List<String> codeImages,
 			List<String> meanings) {
-		super(context, R.layout.activity_listview, codeImages);
+		super(context, R.layout.listview_layout, codeImages);
 		this.context = context;
 		this.codeImages = codeImages;
 		this.meanings = meanings;
@@ -45,7 +45,7 @@ public class SimpleListImageAdapter extends ArrayAdapter<String> {
 			LayoutInflater inflater = (LayoutInflater) context
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-			convertView = inflater.inflate(R.layout.activity_listview, parent,
+			convertView = inflater.inflate(R.layout.listview_layout, parent,
 					false);
 
 			viewHolder = new ViewHolderItem();
