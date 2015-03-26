@@ -1,0 +1,580 @@
+738B	王	OU, NOU	-	King
+8C9D	貝	-	Kai	Shellfish
+7389	玉	GYOKU	Tama	Gem
+7CF8	糸	SHI	Ito	Thread
+77F3	石	SEKI, SHAKU, KOKU	Ishi	Stone
+8349	草	SOU	Kusa	Grass
+7AF9	竹	CHIKU	Take	Bamboo
+866B	虫	CHUU	Mushi	Insect
+7FBD	羽	U	Hane, Ha, Wa	Feather / Wing
+96F2	雲	UN	Kumo	Cloud
+5712	園	EN	Sono	Garden
+79D1	科	KA	-	Subject of study
+7D75	絵	KAI, E	-	Picture
+89D2	角	KAKU	Kado, Tsuno	Angle, Horn
+6D3B	活	KATSU	-	Active / Live
+63DB	換	KAN	Ka (eru), Ka (Waru)	Exchange
+4E38	丸	GAN	Maru, Maru (i)	Round
+5CA9	岩	GAN	Iwa	Rock
+8A18	記	KI	Shiru (su)	Write down
+5F62	形	KEI, GYOU	Kata, Katachi	Shape
+539F	原	GEN	Hara	Plain, Original
+6238	戸	KO	To	Door / Household
+9EC4	黄	KOU, OU	Ki, Ko	Yellow
+4EA4	交	KOU	Maji (waru), Maze (ru), Maza (ru), Ka (u)	Intercourse, Cross
+516C	公	KOU	Ooyake	Public
+8C37	谷	KOKU	Tani	valley
+7D30	細	SAI	Hoso (i), Komaka (i)	Slender / Minute
+624D	才	SAI	 -	Talent / Age suffix
+7B97	算	SAN	-	Calculate
+5BFA	寺	JI	Tera	Buddhist Temple
+6570	数	SUU, SU	Kazu, Kazo (eru)	Number
+661F	星	SEI, SHOU	Hoshi	Star
+6674	晴	SEI	Ha (reru)	Fine weather
+96EA	雪	SETSU	Yuki	Snow
+7DDA	線	SEN	-	Line
+8239	船	SEN	Funa, Fune	Ship
+7D44	組	SO	Ku (mi), Ku (mu)	Organize / Assemble
+76F4	直	CHOKU	Dada (chini), Nao (su)	Straight / Fix
+70B9	点	TEN	-	Point
+5F53	当	TOU	A (taru)	The present / hit
+5185	内	NAI, DAI	Uchi	Inside
+99AC	馬	BA	Uma, Ma	Horse
+9EA6	麦	BAKU	Mugi	Wheat
+756A	番	BAN	-	Order / Watch
+7C73	米	BEI, MAI	Kome	Rice / America
+9CF4	鳴	MEI	Na (ku), Na (ru)	Cry / Sound
+6BDB	毛	MOU	Ke	Hair
+59D4	委	I	Yuda (neru)	Commit
+80Bd	育	IKU	Soda (teru), Haguku (mu)	Breed / Raise
+6CF3	泳	EI	Oyo (gu)	Swim
+6A2A	横	OU	Yoko	Side
+592E	央	OU	-	Center
+6E29	温	ON	Atata (kai)	Warm / Temperature
+5316	化	KA, KE	Ba (keru)	Change into
+8277	荷	KA	Ni	Load
+968E	階	KAI	-	Floor / Rank / Step
+611F	感	KAN	-	Sense / Feel
+5CB8	岸	GAN	Kishi	Shore
+671F	期	KI, GO	-	Term / Expect
+5BA2	客	KYAKU, KAKU	-	Guest / Customer
+7403	球	KYUU	Tama	Ball
+7D1A	級	KYUU	-	Grade
+6A4B	橋	KYOU	Hashi	Bridge
+5C40	局	KYOKU	-	Bureau / Segment
+66F2	曲	KYOKU	Ma (garu)	Music / Curve
+82E6	苦	KU	Kuru (shii), Niga (i)	Suffering / Bitter
+5177	具	GU	-	Implement
+541B	君	KUN	Kimi	Ruler / You
+4FC2	係	KEI	Kaka (ru), Kakari	Connect / In charge
+8840	血	KETSU	Chi	Blood
+6C7A	決	KETSU	Ki (meru)	Decide
+6E56	湖	KO	Mizuumi	Lake
+5EAB	庫	KO, KU	-	Storehouse
+5411	向	KOU	Mu (ku)	To move foward
+5E78	幸	KOU	Saiwa (i), Shiawa (se), Sachi	Good Fortune / Happy
+6E2F	港	KOU	Minato	Port
+53F7	号	GOU	-	Number / Signal / Sign
+6839	根	KON	Ne	Root
+796D	祭	SAI	Matsuri	Festival
+76BF	皿	-	Sara	Plate
+6307	指	SHI	Yubi, Sa (su)	Finger / Point
+6B6F	歯	SHI	Ha	Tooth
+6B21	次	JI, SHI	Tsugi, Tsu (gu)	Next
+5F0F	式	SHIKI	-	Style / Ceremony
+5B9F	実	JITSU	Mi, Mino (ru)	real / Fruit
+53D6	取	SHU	Toru	Take
+5B88	守	SHU, SU	Mamo (ru), Mo (ri)	Protect
+9152	酒	SHU	Sake, Saka	Alcoholic drink
+53D7	受	JU	U (keru)	Receive
+5DDE	州	SHUU	Su	State
+62FE	拾	SHUU, JUU	Hiro (u)	Pick up
+5BBF	宿	SHUKU	Yado, Yado (ru)	Lodge / Inn
+52A9	助	JYO	Tasu (keru), Suke	Help
+5546	商	SHOU	Akina (u)	Trade
+7AE0	章	SHOU	-	Chapter / Badge
+52DD	勝	SHOU	Ka (tsu), Masa (ru)	Win / Excel
+6D88	消	SHOU	Ke (su), Ki (eru)	Estinguish / Spend
+690D	植	SHOKU	U (eru), U (waru)	Plant
+7533	申	SHIN	Mou (su)	Report / Call
+795E	神	SHIN, JIN	Kami, Kan, Kou	God / Mind
+8EAB	身	SHIN	Mi	Body / Self
+6DF1	深	SHIN	Fuka (i), Fuka (maru)	Deep
+6574	整	SEI	Totono (u)	Put in order
+6614	昔	SEKI, SHAKU	Mukashi	Former times
+5168	全	ZEN	Matta (ku), Sube (te)	Whole
+76F8	相	SOU, SHOU	Ai	Phase / Mutual
+60F3	想	SOU, SO	-	Conceive / Image
+901F	速	SOKU,	Haya (i), Sumi (yaka)	Quick
+606F	息	SOKU	Iki	Breath
+6253	打	DA	U (tsu)	Strike
+5BFE	対	TAI, TSUI	-	Opposite / Oppose
+7B2C	第	DAI	-	Rank / No.
+70AD	炭	TAN	Sumi	Coal / Charcoal
+8AC7	談	DAN	-	Talk
+67F1	柱	CHUU	Hashira	Pillar
+8ABF	調	CHOU	Shirabe (ru), Totono (u)	Tone / Research
+8FFD	追	TSUI	O (u)	Chase
+5B9A	定	TEI	Sada (meru)	Fix
+5EAD	庭	TEI	Niwa	Court / Garden
+5E95	底	TEI	Soko	Bottom
+9244	鉄	TETSU	-	Iron
+5CF6	島	TOU	Shima	Island
+7B49	等	TOU	Hito (shii)	Equal / Class
+767B	登	TOU, TO	Nobo (ru)	Climb
+6295	投	TOU	Na (geru)	Throw / Send in
+6E6F	湯	TOU	Yu	Hot water
+7AE5	童	DOU	Warabe	Child
+8FB2	農	NOU	-	Farming
+6CE2	波	HA	Nami	Wave
+914D	配	HAI	Kuba (ru)	Distribute
+500D	倍	BAI	-	Times / Double
+7BB1	箱	-	Hako	Box
+7551	畑	-	Hata, Hatake	Field
+5742	坂	HAN	Saka	Slope
+677F	板	HAN, BAN	Ita	Board / Plate
+53CD	反	HAN, HON, TAN	So (ru)	Counter
+76AE	皮	HI	Kawa	Skin
+60B2	悲	HI	Kana (shii)	Sad
+7F8E	美	BI	Utsuku (shii)	Beautiful
+9F3B	鼻	BI	Hana	Nose
+7B46	筆	HITSU	Fude	Brush Writing
+6C37	氷	HYOU	Koori, Hi	Ice
+8868	表	HYOU	Omote, Arawa (su)	Surface / Table
+79D2	秒	BYOU	-	Second
+8CA0	負	FU	Ma (keru), O (u)	Bear / Lose
+90E8	部	BU	-	Section
+798F	福	FUKU	-	Fortune
+5E73	平	HEI, BYOU	Tai (ra), Hira	Flat / Calm
+8FD4	返	HEN	Kae (su)	Return
+653E	放	HOU	Hana (su), Hou (ru)	Let go
+547D	命	MEI, MYOU	Inochi	Order / Life
+9762	面	MEN	Omo, Omote, Tsura	Face
+5F79	役	YAKU, EKI	-	Service
+6CB9	油	YU	Abura	Oil
+7531	由	YU, YUU, YUI	Yoshi	Reason / Meaning / Cause
+904A	遊	YUU, YU	Aso (bu)	Play
+4E88	予	YO	-	In advance / I
+8449	葉	YOU	Ha	Leaf
+967D	陽	YOU	-	Sun, Positive
+69D8	様	YOU	Sama	Mode / Formal title
+843D	落	RAKU	O (chiru)	Fall
+6D41	流	RYUU, RU	Naga (reru)	Flow / Current / Style
+4E21	両	RYOU	-	Both
+7DD1	緑	RYOKU, ROKU	Midori	Green
+793C	礼	REI, RAI	-	Etiquette / Rite
+5217	列	RETSU	-	Row
+7DF4	練	REN	Ne (ru)	Train
+8DEF	路	RO	Ji	Road
+548C	和	WA, O	Yawa (ragu), Nago (mu)	Peace / Sum / Japan
+611B	愛	AI	-	Affection / Love
+6848	案	AN	-	Proposal / Idea
+4F4D	位	I	Kurai	Rank / Position
+8863	衣	I, E	Koromo, Kinu	Clothes / Garment
+56F2	囲	I	Kako (mu)	Enclose
+80C3	胃	I	-	Stomach
+5370	印	IN	Shirushi	Mark / Seal
+6804	栄	EI	Saka (eru), Ha (eru)	Flourish / Glory
+5869	塩	EN	Shio	Salt
+5104	億	OKU	-	Hundred million
+8CA8	貨	KA	-	Money / Goods
+8AB2	課	KA	-	Section / Lesson
+52A0	加	KA	Kuwa (eru)	Add
+679C	果	KA	Ha (tasu)	Fruit / End
+68B0	械	KAI	-	Machine
+6539	改	KAI	Arata (meru)	Reform
+5BB3	害	GAI	-	Harm
+5404	各	KAKU	Ono ono	Each
+899A	覚	KAKU	Obo (eru), Sa (masu)	Perceive / Feel
+7BA1	管	KAN	Kuda	Pipe / Control
+5B98	官	KAN	-	Government
+5B8C	完	KAN	-	Complete
+95A2	関	KAN	Seki, Kaka (waru), Kakawa (ru)	Concern / Barrier
+89B3	観	KAN	Mi (ru)	View
+9858	願	GAN	Nega (u)	Wish / Ask a favor
+5668	器	KI	Utsuwa	Vessel / Tool
+5B63	季	KI	-	Season
+559C	喜	KI	Yoroko (bu)	Happy
+5E0C	希	KI	-	Rare / Aspire
+6A5F	機	KI	Hata	Machine / Occasion
+8B70	議	GI	-	Discuss / Debate
+6CE3	泣	KYUU	Naku	Cry
+7D66	給	KYUU	-	Supply / Pay
+6C42	求	KYUU	Moto (meru)	Seek
+6551	救	KYUU	Suku (u)	Save / Rescue
+6f01	漁	GYO, RYOU		Fish
+7AF6	競	KYOU, KEI	Kiso (u), Se (ru)	Compete
+5171	共	KYOU	Tomo	Together
+5354	協	KYOU	-	Cooperate
+6975	極	GYOKU, KOKU	Kiwa (meru)	Extreme / Pole
+8A13	訓	KUN	-	Instruct
+8ECD	軍	GUN	-	Army
+666F	景	KEI	-	Scene
+578B	型	KEI	Kata	Type
+82B8	芸	GEI	-	Art / Skill
+6B20	欠	KESTU	Ka (keru)	Lack
+7D50	結	KETSU	Mu (subu), Yu (u)	Tie / Conclude
+5065	健	KEN	Su (koyaka)	Robust
+56FA	固	KO	Kata (i)	Solid / Firm
+822A	航	KOU	-	Navigate
+5019	候	KOU	Sourou	Season / Serve
+5EB7	康	KOU	-	Calm / Healthy
+544A	告	KOKU	Tsu (geru)	Notify
+5DEE	差	SA	Sa (su)	Difference
+6700	最	SAI	Motto (mo)	Most
+63A1	採	SAI	To (ru), Irodo (ru)	Pick / Gather
+6750	材	ZAI	 -	Timber / Material
+6628	昨	SAKU	-	Yesterday / Last
+6BBA	殺	SATSU, SEI, SETSU	Koro (su)	Kill
+5BDF	察	SATSU	-	Inspect / Guess
+5237	刷	SATSU	Su (ru)	Print
+672D	札	SATSU	Fu (da)	Tag
+6563	散	SAN	Chi (ru)	Scatter
+53C2	参	SAN	Mai (ru)	Attend / Go to pray
+6B8B	残	ZAN	No (koru)	Remain / Ruthless
+53F2	史	SHI	-	History
+53F8	司	SHI	-	Officiate
+6CBB	治	JI, CHI	Osa (meru), Nao (su)	Govern / Cure
+5150	児	JI, NI	-	Child
+8F9E	辞	JI	Ya (meru)	Word / Resign
+5931	失	SHITSU	Ushina (u)	Lose / Slip
+7A2E	種	SHU	Tane	Variety / Seed
+5468	周	SHUU	Mawa (ri)	Periphery
+795D	祝	SHUKU, SHUU	Iwa (u)	Celebrate
+9806	順	JUN	-	Order / Obey
+521D	初	SHO	Hatsu, Ui, Haji (me), So (meru)	First
+8CDE	賞	SHOU	-	Prize
+7B11	笑	HOU	Wara (u), E (mu)	Laugh
+7167	照	SHOU	Te (ru)	Illuminate
+8C61	象	SHOU, ZOU	-	Image / Elephant
+713C	焼	SHOU	Ya (ku)	Burn
+4FE1	信	SHIN	-	Believe / Message
+81E3	臣	SHIN, JIN	-	Retainer
+6210	成	SEI, JOU	Na (ru)	Form / Achieve
+9759	静	SEI, JOU	Shizu (ka)	Quiet
+7701	省	SEI, SHOU	Kaeri (miru), Habu (ku)	Ministry / Reflect
+6E05	清	SEI, SHOU	Kiyo (maru)	Clear / Pure
+7A4D	積	SEKI	Tsu (mu)	Accumulate
+5E2D	席	SEKI	-	Seat
+6298	折	SETSU	O (ru), Ori	Break off / Fold
+7BC0	節	SETSU, SECHI	Fushi	Tune / Joint / Season
+6D45	浅	SEN	Asa (i)	Shallow
+9078	選	SEN	Era (bu)	Choose
+6226	戦	SEN	Ikusa, Tataka (u)	War
+7136	然	ZEN	-	State / As like
+4E89	争	SOU	Araso (u)	Contend
+5074	側	SOKU	Gawa	Side
+675F	束	SOKU	Taba	Tie up / Bundle
+7D9A	続	ZOKU	Tsuzuku, Tsuzu (keru)	Continue
+5352	卒	SOTSU	-	Graduate
+5B6B	孫	SON	Mago	Grandchild
+5E2F	帯	TAI	Obi, O (biru)	Belt / Wear
+9054	逹	TATSU	-	Attain
+5358	単	TAN	-	Single
+7F6E	置	CHI	O (ku)	Place
+4EF2	仲	CHUU	Naka	Intermediary
+8CAF	貯	CHO	-	Lay up
+5146	兆	CHOU	Kiza (shi)	Omen / Trillion
+505C	停	TEI	-	Halt
+7684	的	TEKI	Mato	Target
+4F1D	伝	DEN	Tsu (taeru)	Transmit
+5F92	徒	TO	-	Follower
+52AA	努	DO	Tsuto (meru)	Exert
+706F	灯	TOU	Hi	Lamp
+5F97	得	TOKU	E (ru), U (ru)	Acquire / Gain
+6BD2	毒	DOKU	-	Poison
+72EC	独	DOKU	Hito (ri)	Alone
+71B1	熱	NETSU	Atsu (i)	Heat / Hot
+5FF5	念	NEN	-	Thoughts
+6557	敗	HAI	Yabu (reru)	Be defeated
+8CBB	費	HI	Tsui (yasu)	Expense
+98DB	飛	HI	To (bu)	Fly
+5FC5	必	HITSU	Kanara (zu)	Without Fail
+6A19	標	HYOU	-	Mark
+4ED8	付	FU	Tsu (keru)	Attach
+5E9C	府	FU	-	Prefecture / Agency
+592B	夫	FU, FUU, BU	Otto	Husband / Man
+526F	副	FUKU	-	Secondary
+7C89	粉	FUN	Ko, Kona	Powder
+5175	兵	HEI, HYOU	-	Soldier
+5909	変	HEN	Ka (waru)	Change / Abnormal
+8FBA	辺	HEN	Atar (i), Be	Vicinity
+6CD5	法	HOU, HA, HO	-	Law / Method
+5305	包	HOU	Tsutsu (mu)	Wrap / Envelop
+671B	望	BOU, MOU	Nozo (mu)	Hope / Look after
+8CBF	貿	BOU	-	Trade
+672B	末	MATSU, BATSU	Sue	Last part
+6E80	満	MAN	Mi (chiru), Mita (su)	Full
+672A	未	MI	-	Not yet
+7121	無	MU, BU	Na (i)	Without / Nothing
+7D04	約	YAKU	-	Promises / Contract
+52C7	勇	YUU	Isa (mu)	Brave
+8981	要	YOU	I (ru), Kaname	Require / Summarize
+6D74	浴	YOKU	A (biru)	Bathe
+5229	利	RI	Ki (ku)	Advantage / Profit
+9678	陸	RIKU	-	Land
+826F	良	RYOU	Yo (i)	Good
+91CF	量	RYOU	Ha (karu)	Quantity
+8F2A	輪	RIN	Wa	Wheel / Ring
+985E	類	RUI	Tagui	Kind
+4EE4	令	REI	-	Command
+4F8B	例	REI	Tato (eru)	Example
+51B7	冷	REI	Tsume (tai), Hi (yasu), Hie (ru), Sa (meru)	Cold
+6B74	暦	REKI	-	Personal history
+9023	連	REN	Tsura (naru), Tsu (reru)	Link / In succession
+52B4	労	ROU	-	Labor
+8001	老	ROU	O (iru), Fu (keru)	Old
+9332	録	ROKU	-	Record
+5727	圧	ATSU	-	Pressure
+79FB	移	I	Utsu (ru)	Move
+56E0	因	IN	Yo (ru)	Cause
+6C38	永	EI	Naga (i)	Eternal
+55B6	営	EI	Itona (mu)	Manage / Barracks
+6613	易	EKI, I	Yasa (shii)	Easy / Divination
+6DB2	液	EKI	-	Liquid
+6F14	演	EN	-	Perform
+5FDC	応	OU, NOU	Kota (eru)	Respond
+53EF	可	KA	-	Possible / Approve
+904E	過	KA	Su (gosu), Ayama (chi)	Pass by / Exceed
+6CB3	河	KA	Kawa	River
+4EEE	仮	KA, KE	Ka (ri)	Temporary
+4FA1	価	KA	Atai	Price / Value
+5FEB	快	KAI	Kokoroyo (i)	Pleasant
+89E3	解	KAI, GE	To (ku)	Dissolve / Clarify
+78BA	確	KAKU	Tashi (kameru)	Certain
+683C	格	KAKU, KOU	-	Norm / Status
+984D	額	GAKU	Hitai	Amount / Forehead
+6163	慣	KAN	Na (reru)	Habit
+520A	刊	KAN	-	Publish
+898F	規	KI	-	Regulation
+5BC4	寄	KI	Yo (ru)	Contribute
+57FA	基	KI	Moto, Motoi	Base
+6280	技	GI	waza	Skill
+9006	逆	GYAKU	Saka (rau)	Reverse
+4E45	久	KYUU, KU	Hisa (shii)	Long time
+65E7	旧	KYUU	-	Former
+8A31	許	KYO	Yuru (su)	Permit
+5C45	居	KYO	I (ru)	Reside
+5883	境	KYOU, KEI	Sakai	Boundary / Situation
+7981	禁	KIN	-	Prohibit
+5747	均	KIN	-	Even / Level
+7FA4	群	GUN	Mu (reru), Mura	Group / Crowd
+7D4C	経	KEI, KYOU	He (ru)	Manage / Passage
+691C	検	KEN	-	Examine
+5238	券	KEN	-	Ticket / Certificate
+967A	険	KEN	Ke (washii)	Danger / Steep
+4EF6	件	KEN	-	Matter
+9650	限	GEN	Kagi (ru)	Limit
+73FE	現	GEN	Arawa (reru)	Actual / Appear
+6E1B	減	GEN	He (ru)	Decrease
+500B	個	KO, KA	-	Individual
+6545	故	KO	Yue	Old / The late
+8015	耕	KOU	Tagaya (su)	Till
+8B1B	講	KOU	-	Lecture
+69CB	構	KOU	Kama (eru)	Construct / Mind
+9271	鉱	KOU	-	Ore / Mine
+52B9	効	KOU	Ki (ku)	Effect
+539A	厚	KOU	Atsu (i)	Thick / Kind
+6DF7	混	KON	Ma (zeru), Ko (mu)	Mix
+67FB	査	SA	-	Look into
+969B	際	SAI	Kiwa	Verge / Occasion
+59BB	妻	SAI	Tsuma	Wife
+518D	再	SAI, SA	Futata (bi)	Another time / Again
+5728	在	ZAI	A (ru)	Exist / Stay
+8CA1	財	SAI, ZAI	-	Crime
+7F6A	罪	ZAI	Tsumi	Each
+96D1	雑	ZATSU	Zou	Rough / Mixed
+8CDB	賛	SAN	-	Approve / Praise
+5E2B	師	SHI	-	Master
+679D	枝	SHI	Eda	Branch
+8CC7	資	SHI	-	Resources
+652F	支	SHI	Sasa (eru)	Branch / Support
+5FD7	志	SHI	Kokoroza (su), Kokorozashi	Ambition
+793A	示	JI, SHI	Shime (su)	Show
+4F3C	似	JI	Ni (ru)	Resemble
+8B58	識	SHIKI	-	Know / Discriminate
+6388	授	JYU	Sazu (karu)	Confer
+4FEE	修	SHUU, SHU	Osa (meru)	Cultivate / Repair
+8FF0	述	JUTSU	No (beru)	State
+8853	術	JUTSU	-	Practical art
+6E96	準	JUN	-	Standard / Semi-
+62DB	招	SHOU	Mane (ku)	Invite
+627F	承	SHOU	Uketawama (ru)	Agree to
+72B6	状	JOU	-	Form / Letter
+5E38	常	JOU	Tsune, Toko	Normal / Regular
+60C5	情	JOU, SEI	Nasa (ke)	Emotion / Condition
+6761	条	JOU	-	Article
+57CE	城	JOU	Shiro	Castle
+8077	職	SHOKU	-	Employment
+653F	政	SEI, SHOU	Matsurigoto	Politics / Rule
+6027	性	SEI, SHOU	-	Nature / Sex
+5236	制	SEI	-	System / Control
+52E2	勢	SEI	Ikio (i)	Power
+7CBE	精	SEI, SHOU	hayashi	Refine / Essence
+88FD	製	SEI	-	Manufacture
+7A0E	税	ZEI	-	Tax
+8CAC	責	SEKI	Se (meru)	Burden / Blame
+7E3E	績	SEKI	-	Achievements
+63A5	接	SETSU	Tsu (gu)	Contact / Touch
+8A2D	設	SETSU	Mou (keru)	Set up
+7D76	絶	ZETSU	Ta (tsu)	Die out / Cut off
+7956	祖	SO	-	Ancestor
+7DCF	総	SOU	-	Total / General
+5897	増	ZOU	Ma (su), Fu (eru)	Increase
+50CF	像	ZOU	-	Image
+9020	造	ZOU	Tsuku (ru)	Make
+5247	則	SOKU	-	Rule
+6E2C	測	SOKU	Haka (ru)	Measure
+7387	率	SOTSU, RITSU	Hiki (iru)	Rate / Lead
+640D	損	SON	Soko (nau)	Loss / Damage
+9000	退	TAI	Shirizo (ku)	Retreat
+56E3	団	DAN, TON	-	Group / Body
+65AD	断	DAN	Ta (tsu), Kotowa (ru)	Cut off / Resolve
+7BC9	築	CHIKU	Kizu (ku)	Construct
+5F35	張	CHOU	Ha (ru)	Spread / Stain
+7A0B	程	TEI	Hodo	Extent / Span
+9069	適	TEKI	-	Suitable
+9285	銅	DOU	-	Copper
+5C0E	導	DOU	Michibi (ku)	Guide
+4EFB	任	NIN	Maka (su)	Office / Entrust
+71C3	燃	NEN	Mo (eru)	Burn
+80FD	能	NOU	-	Ablility
+7834	破	HA	Ya (buru)	Break
+72AF	犯	HAN	Oka (su)	Offense
+5224	判	HAN	-	Judge
+7248	版	HAN	-	Print / Publishing
+6BD4	比	HI	Kura (beru)	Compare
+975E	非	HI	-	Not / Not good
+5099	備	BI	Sona (eru)	Provide
+8A55	評	HYOU	-	Comment
+8CA7	貧	HIN, BIN	Mazu (shii)	Poor
+5E03	布	FU	Nuno	Cloth / Spread
+5BCC	富	FU, FUU	To (mu), Tomi	Rich
+5A66	婦	FU	-	Adult woman
+6B66	武	BU, MU	-	Military
+8907	複	FUKU	-	Compound
+5FA9	復	FUKU	-	Return to
+4ECF	仏	BUTSU, FUTSU	Hotoke	Buddha
+7DE8	編	HEN	A (mu)	Compile / Knit
+4FDD	保	HO, HOU	Tamo (tsu)	Preserve
+8C4A	豊	HOU	Yuta (ka)	Plentiful
+5831	報	HOU	Muku (iru)	Inform / Requite
+66B4	暴	BOU, BAKU	Aba (reru)	Violent
+9632	防	BOU	Fuse (gu)	Prevent
+5922	夢	MU	Yume	Dream
+52D9	務	MU	Tsuto (meru)	duty
+8FF7	迷	MEI	Mayo (u)	Perplexed
+7DBF	綿	MEN	Wata	Cotton
+8F38	輸	YU	-	Transport
+9810	預	YO	Azu (keru)	Deposit
+4F59	余	YO	Ama (ru)	Remaining / Excess
+5BB9	容	YOU	-	Appearance / Contain
+7565	略	RYAKU	-	Abridged / Strategy
+7559	留	RYUU, RU	To (maru)	Keep / Stay
+9818	領	RYO	-	Territory
+7570	異	I	Koto (naru)	Different
+57DF	域	IKI	-	Bounded area
+5B87	宇	U	-	Universe
+5EF6	延	EN	No (basu)	Extend / Postpone
+7070	灰	KAI	Hai	Ashes
+9769	革	KAKU	Kawa	Reform / Leather
+62E1	拡	KAKU	Hiro (garu)	Enlarge
+5272	割	KATSU	Wa (reru), Wari, Sa (ku)	Divide
+7C21	簡	KAN	-	Simple
+5DFB	巻	KAN	Ma (ku), Maki	Roll up / Volume
+5E72	干	KAN	Ho (su), Hi (ru)	Dry
+770B	看	KAN	-	Watch / Care for
+5371	危	KI	Abu (nai), Aya (bumu)	Dangerous
+673A	机	KI	Tsukue	Desk
+7591	疑	GI	Utaga (u)	Doubt
+5438	吸	KYUU	Su (u)	Suck / Breathe in
+80F8	胸	KYOU	Mune, Muna	Chest
+4F9B	供	KYOU, KU	Sona (eru), Tomo	Offer
+52E4	勤	KIN, GON	Tsuto (meru)	Service
+8B66	警	KEI	-	Guard against / Warn
+656C	敬	KEI	Uyama (u)	Respect
+5287	劇	GEKI	-	Drama
+6A29	権	KEN, GON	-	Right / Power
+547C	呼	KO	Yo (bu)	Call
+8AA4	誤	GO	Ayama (ru)	Mistake
+7D05	紅	KOU, KU	Beni, Kurenai	Crimson
+964D	降	KOU	Fu, Oro (su), O (riru)	woods
+523B	刻	KOKU	Kiza (mu)	Engrave / Carve
+9AA8	骨	KOTSU	Hone	Bone
+56F0	困	KON	Koma (ru)	Be in trouble
+7802	砂	SA, SHA	Suna	Sand
+5EA7	座	ZA	Suwa (ru)	Seat / Sit
+6E08	済	SAI	Su (mu)	Settle / Relieve
+518A	冊	SATSU, SAKU	-	Card / Volume / Book
+8A5E	詞	SHI	-	Words
+8A8C	誌	SHI	-	Magazine
+6368	捨	SHA	Su (teru)	Discard
+82E5	若	JYAKU, NYAKU	Waka (i), Mo (shikuha)	Young
+53CE	収	SHUU	Osa (maru)	Take in / Income
+7D14	純	JUN	-	Pure
+8AF8	諸	SHO	-	Various
+7F72	署	SHO	-	Government office
+51E6	処	SHO	-	Deal with
+7DD2	緒	SHO, CHO	O	Beginning
+9664	除	JO, JI	Nozo (ku)	Remove
+5C06	将	SHOU	-	General office
+84B8	蒸	JOU	Mu (su)	Steam / Evaporate
+91DD	針	SHIN	Hari	Needle
+6CC9	泉	SEN	Izumi	Spring
+5C02	専	SEN	Moppa (ra)	Exclusive
+5584	善	ZEN	Yo (i)	Good
+5C64	層	SOU	-	Stratum
+88C5	装	SOU, SHOU	Yosoo (u)	Dress / Fit out
+7A93	窓	SOU	Mado	Window
+64CD	操	SOU	Misao / Ayatsu (ru)	Manipulate
+81D3	臓	ZOU	-	Internal organ
+8535	蔵	ZOU	Kura	Store
+5C0A	尊	SON	Tatto (bu), Touto (i)	Honor
+5B58	存	SON, ZON	-	Exist
+4ED6	他	TA	Hoka	Other
+5B85	宅	TAKU	-	House / Home
+62C5	担	TAN	Nina (u), Katsu (gu)	Bear / Undertake
+63A2	探	TAN	Sagu (ru), Saga (su)	Probe / Search
+6696	暖	DAN	Atataka (i)	Warm
+6BB5	段	DAN	-	Step
+5024	値	CHI	Ne, Atai	Value
+5B99	宙	CHUU	-	Space
+8457	著	CHO	Arawa (su), Ichijiru (shii)	Author / Conspicuous
+9802	頂	CHOU	Itadaki, Itada (ku)	Summit / Recieve
+5E81	庁	CHOU	-	Government agency
+8CC3	賃	CHIN	-	Wages / Charges
+75DB	痛	TSUU	Itamu	Pain
+5C55	展	TEN	-	Unfold / Display
+515A	党	TOU	-	Party
+5C4A	届	-	Todo (keru)	Deliver / Reach
+96E2	難	NAN	Muzuka (shii), Kata (i)	Difficult / Disaster
+4E73	乳	NYUU	Chichi, Chi	Milk
+8A8d	認	NIN	Mito (meru)	Recognize
+8133	脳	NOU	-	Brain
+62DD	拝	HAI	Oga (mu)	Worship / Humbly
+80CC	背	HAI	Se, Sei, Somu (ku)	Back
+6669	晩	BAN	-	Evening
+5426	否	HI	Ina	Say no / Or not
+6279	批	HI	-	Criticize
+8179	腹	FUKU	Hara	Belly
+4E26	並	HEI	Nara (bu), Na (mi)	Line up
+9589	閉	HEI	To (jiru), Shi (meru)	Close
+7247	片	HEN	Kata	Fragment / One sided
+88DC	補	HO	Ogina (u)	Supplement
+66AE	暮	BO	Ku (rasu)	Dusk / Live
+8A2A	訪	HOU	Otozu (reru), Tazu (neru)	Visit
+5B9D	宝	HOU	Takara	Treasure
+68D2	棒	BOU	-	Rod
+5FD8	忘	BOU	Wasu (reru)	Forget
+4EA1	亡	BOU, MOU	Na (i)	Decease
+679A	枚	MAI	-	Counter for sheets
+90F5	郵	YUU	-	Mail
+512A	優	YUU	Yasa (shii), Sugu (reru)	Superior / Actor
+5E7C	幼	YOU	Osana (i)	Very young
+6B32	欲	YOKU	Hos (suru), Ho (shii)	Desire
+7FCC	翌	YOKU	-	The following
+4E71	乱	RAN	Midare (ru), Mida (su)	Disordered
+5275	卵	RAN	Tamago	Egg
+88CF	裏	RI	Ura	Rear
+5F8B	律	RITSU, RICHI	-	Law / Rhythm
+8AD6	論	RON	-	Argue / Theory

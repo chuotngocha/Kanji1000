@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Kanji N5</string>
+    <string name="app_name">I Love Kanji</string>
     <string name="hello_world">Hello world!</string>
     <string name="meaning">meaning</string>
     <string name="image_description">image description</string>

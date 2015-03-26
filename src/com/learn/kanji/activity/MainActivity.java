@@ -21,8 +21,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	private Button buttonN5;
 	private Button buttonN4;
 	private Button buttonN3;
-	private Button buttonN2;
-	private Button buttonN1;
+//	private Button buttonN2;
+//	private Button buttonN1;
 	private Button buttonBookmark;
 	public static int type;
 
@@ -36,10 +36,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		buttonN4.setOnClickListener(this);
 		buttonN3 = (Button) findViewById(R.id.kanji_n3);
 		buttonN3.setOnClickListener(this);
-		buttonN2 = (Button) findViewById(R.id.kanji_n2);
-		buttonN2.setOnClickListener(this);
-		buttonN1 = (Button) findViewById(R.id.kanji_n1);
-		buttonN1.setOnClickListener(this);
+//		buttonN2 = (Button) findViewById(R.id.kanji_n2);
+//		buttonN2.setOnClickListener(this);
+//		buttonN1 = (Button) findViewById(R.id.kanji_n1);
+//		buttonN1.setOnClickListener(this);
 		buttonBookmark = (Button) findViewById(R.id.kanji_bookmark);
 		buttonBookmark.setOnClickListener(this);
 	}
@@ -60,14 +60,14 @@ public class MainActivity extends Activity implements OnClickListener {
 			type = 3;
 			break;
 		}
-		case R.id.kanji_n2: {
-			type = 2;
-			break;
-		}
-		case R.id.kanji_n1: {
-			type = 1;
-			break;
-		}
+//		case R.id.kanji_n2: {
+//			type = 2;
+//			break;
+//		}
+//		case R.id.kanji_n1: {
+//			type = 1;
+//			break;
+//		}
 		default:
 			type = -1;
 			break;

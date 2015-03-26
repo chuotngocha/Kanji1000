@@ -28,7 +28,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 /**
  * @author ngocha
@@ -66,20 +65,50 @@ public class ListKanjiActivity extends ListActivity {
 				loadFromFile(R.raw.list_n5);
 				break;
 			}
-
+			case 4: {
+				loadFromFile(R.raw.list_n4);
+				break;
+			}
+			case 3: {
+				loadFromFile(R.raw.list_n3);
+				break;
+			}
 			default:
 				break;
 			}
-
 		}
 
 		loadData();
 
-		this.oldSize = results.size();
-
 		adapter = new ListKanjiAdapter(this, codeImages, meanings);
 		setListAdapter(adapter);
 
+		// Set title for activity
+		switch (MainActivity.type) {
+		case 5: {
+			this.setTitle(R.string.kanji_n5);
+			break;
+		}
+		case 4: {
+			this.setTitle(R.string.kanji_n4);
+			break;
+		}
+		case 3: {
+			this.setTitle(R.string.kanji_n3);
+			break;
+		}
+		case 2: {
+			this.setTitle(R.string.kanji_n2);
+			break;
+		}
+		case 1: {
+			this.setTitle(R.string.kanji_n1);
+			break;
+		}
+		default:
+			this.setTitle(R.string.kanji_bookmark);
+			break;
+		}
 	}
 
 	public void loadData() {
@@ -98,7 +127,10 @@ public class ListKanjiActivity extends ListActivity {
 	@Override
 	protected void onResume() {
 
+		this.oldSize = results.size();
+
 		super.onResume();
+
 		if (MainActivity.type != -1) {
 			results = dbHelper.getAllKanjis(MainActivity.type);
 		} else {
@@ -166,8 +198,17 @@ public class ListKanjiActivity extends ListActivity {
 			obj = new KanjiObject();
 			String[] columns = line.split("\t");
 
-			obj.setCode(new StringBuilder("n5_").append(
+			String prefix = "n5_";
+			if (MainActivity.type == 4) {
+				prefix = "n4_";
+			}
+			if (MainActivity.type == 3) {
+				prefix = "n3_";
+			}
+
+			obj.setCode(new StringBuilder(prefix).append(
 					columns[0].toLowerCase(Locale.getDefault())).toString());
+
 			obj.setOnyomi(columns[2]);
 			obj.setKunyomi(columns[3]);
 			obj.setMeaning(columns[4].toUpperCase(Locale.getDefault()));
